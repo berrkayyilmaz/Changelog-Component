@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.changelog-container {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 122px;
+    width: 2px;
+    height: 100%;
+    background: black;
+    z-index: 1;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.timeline-item .date {
+    font-size: 12px;
+    color: gray;
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.timeline-item .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+}
+.timeline-item .content {
+    flex: 3;
+    text-align: left;
+    position: relative;
+}
+
+.cta-button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
